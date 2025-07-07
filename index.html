@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Pendaftaran Siswa Baru - SD Harapan Bangsa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <style>
+    body {
+      background: #f5f5f5;
+      padding-top: 70px;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .navbar-default {
+      background-color: #222;
+      border: none;
+    }
+
+    .navbar-default .navbar-brand,
+    .navbar-default .navbar-nav>li>a,
+    .navbar-default .navbar-nav>.dropdown>a {
+      color: #ccc;
+    }
+
+    .navbar-default .navbar-brand img {
+      height: 25px;
+      display: inline-block;
+      margin-top: -5px;
+      margin-right: 5px;
+    }
+    .navbar-default .navbar-nav>li>a {
+      font-size: 16px;
+    }
+    .navbar-default .navbar-nav>li>a:hover,
+    .navbar-default .navbar-nav>.dropdown:hover>a {
+      color: #fff !important;
+      background-color: transparent !important;
+    }
+
+    .navbar-nav>li>.dropdown-menu {
+      background-color: #333;
+    }
+
+    .navbar-nav>li>.dropdown-menu>li>a {
+      color: #ccc;
+      background-color: transparent;
+      border: none;
+    }
+
+    .navbar-nav .dropdown-menu>li>a:hover,
+    .navbar-nav .dropdown-menu>li>a:focus {
+      color: #fff !important;
+      background-color: transparent !important;
+      text-decoration: none;
+    }
+
+    .navbar-nav>li>.dropdown-menu>li>a:hover {
+      color: #fff;
+      background-color: transparent;
+    }
+
+    .navbar-nav>li>a:focus,
+    .navbar-nav>li>a:active,
+    .navbar-nav>.dropdown.open>a {
+      background-color: transparent !important;
+      color: #fff !important;
+      outline: none;
+      box-shadow: none;
+    }
+
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: right;
+        margin-right: 0;
+      }
+
+      /* Dropdown hover untuk desktop */
+      .navbar-nav>.dropdown:hover>.dropdown-menu {
+        display: block;
+      }
+    }
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 30px 0;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header text-center">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+          <span class="icon-bar" style="background-color: #fff;"></span>
+          <span class="icon-bar" style="background-color: #fff;"></span>
+          <span class="icon-bar" style="background-color: #fff;"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="img/SD HARAPAN BANGSA.png" alt="Logo">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Beranda</a></li>
+
+          <!-- Dropdown Profil -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profil <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="profil.html">Profil Sekolah</a></li>
+              <li><a href="struktur organisasi.html">Struktur Organisasi</a></li>
+              <li><a href="fasilitas.html">Fasilitas</a></li>
+              <li><a href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+            </ul>
+          </li>
+
+          <!-- Dropdown Akademik -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Akademik <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="guru.html">Guru</a></li>
+              <li><a href="siswa.html">Siswa</a></li>
+              <li><a href="kurikulum.html">Kurikulum</a></li>
+            </ul>
+          </li>
+
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="pendaftaran.html">Pendaftaran</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="text-center">Selamat Datang di SD Harapan Bangsa</h1>
+      <p class="text-center">Mendidik generasi yang cerdas, berakhlak, dan siap menghadapi masa depan.</p>
+      <img src="img/sekolah.jpeg" width="100%" alt="Foto Sekolah SD Harapan Bangsa">
+    </div>
+
+    <!-- Highlight Button Section -->
+    <div class="text-center">
+      <a href="pendaftaran.html" class="btn btn-success btn-lg btn-feature">Daftar Sekarang</a>
+      <a href="galeri.html" class="btn btn-info btn-lg btn-feature">Lihat Galeri</a>
+      <a href="berita.html" class="btn btn-warning btn-lg btn-feature">Berita Sekolah</a>
+    </div>
+  </div><br><br><br>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p style="font-size: 18px; font-weight: bold; margin: 0;">SD Harapan Bangsa</p>
+      <p style="margin: 5px 0;">Jl. Pendidikan No. 123, Tandam Hilir, Indonesia</p>
+      <div style="margin: 15px 0;">
+        <a href="https://instagram.com" target="_blank" class="fa fa-instagram" style="color:white; margin: 0 10px; font-size: 20px;"></a>
+        <a href="https://facebook.com" target="_blank" class="fa fa-facebook" style="color:white; margin: 0 10px; font-size: 20px;"></a>
+        <a href="https://youtube.com" target="_blank" class="fa fa-youtube-play" style="color:white; margin: 0 10px; font-size: 20px;"></a>
+      </div>
+      <p style="font-size: 14px; margin-top: 10px;">&copy; 2025 SD Harapan Bangsa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.navbar-nav .dropdown').hover(
+        function () {
+          $(this).addClass('open');
+        },
+        function () {
+          $(this).removeClass('open');
+        }
+      );
+    });
+  </script>
+</body>
+</html>

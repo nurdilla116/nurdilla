@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kontak - SD Harapan Bangsa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <style>
+    body {
+      background: #f5f5f5;
+      padding-top: 70px;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .navbar-default {
+      background-color: #222;
+      border: none;
+    }
+
+    .navbar-default .navbar-brand,
+    .navbar-default .navbar-nav>li>a,s
+    .navbar-default .navbar-nav>.dropdown>a {
+      color: #ccc;
+    }
+
+    .navbar-default .navbar-brand img {
+      height: 25px;
+      display: inline-block;
+      margin-top: -5px;
+      margin-right: 5px;
+    }
+    .navbar-default .navbar-nav>li>a {
+      font-size: 16px;
+    }
+    .navbar-default .navbar-nav>li>a:hover,
+    .navbar-default .navbar-nav>.dropdown:hover>a {
+      color: #fff !important;
+      background-color: transparent !important;
+    }
+
+    .navbar-nav>li>.dropdown-menu {
+      background-color: #333;
+    }
+
+    .navbar-nav>li>.dropdown-menu>li>a {
+      color: #ccc;
+      background-color: transparent;
+      border: none;
+    }
+
+    .navbar-nav .dropdown-menu>li>a:hover,
+    .navbar-nav .dropdown-menu>li>a:focus {
+      color: #fff !important;
+      background-color: transparent !important;
+      text-decoration: none;
+    }
+
+    .navbar-nav>li>.dropdown-menu>li>a:hover {
+      color: #fff;
+      background-color: transparent;
+    }
+
+    .navbar-nav>li>a:focus,
+    .navbar-nav>li>a:active,
+    .navbar-nav>.dropdown.open>a {
+      background-color: transparent !important;
+      color: #fff !important;
+      outline: none;
+      box-shadow: none;
+    }
+
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: right;
+        margin-right: 0;
+      }
+
+      /* Dropdown hover untuk desktop */
+      .navbar-nav>.dropdown:hover>.dropdown-menu {
+        display: block;
+      }
+    }
+      .section {
+        margin-top: 40px;
+        margin-bottom: 120px;
+      }
+      .contact-box {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        padding: 25px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      }
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 30px 0;
+      margin-bottom: 0;
+    }
+    </style>
+  </head>
+  <body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header text-center">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+          <span class="icon-bar" style="background-color: #fff;"></span>
+          <span class="icon-bar" style="background-color: #fff;"></span>
+          <span class="icon-bar" style="background-color: #fff;"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="img/SD HARAPAN BANGSA.png" alt="Logo">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Beranda</a></li>
+
+          <!-- Dropdown Profil -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profil <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="profil.html">Profil Sekolah</a></li>
+              <li><a href="struktur organisasi.html">Struktur Organisasi</a></li>
+              <li><a href="fasilitas.html">Fasilitas</a></li>
+              <li><a href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+            </ul>
+          </li>
+
+          <!-- Dropdown Akademik -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Akademik <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="guru.html">Guru</a></li>
+              <li><a href="siswa.html">Siswa</a></li>
+              <li><a href="kurikulum.html">Kurikulum</a></li>
+            </ul>
+          </li>
+
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="pendaftaran.html">Pendaftaran</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Konten Kontak -->
+    <div class="container section">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contact-box">
+            <h3><span class="glyphicon glyphicon-earphone"></span> Informasi Kontak</h3>
+            <p><strong>Alamat:</strong> Jl. Pendidikan No.45, Kota Harapan, Indonesia</p>
+            <p><strong>Telepon:</strong> (021) 1234-5678</p>
+            <p><strong>Email:</strong> info@sdharapanbangsa.sch.id</p>
+            <p><strong>Jam Operasional:</strong> Senin - Jumat, 07.00 - 15.00</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="contact-box">
+            <h3><span class="glyphicon glyphicon-envelope"></span> Kirim Pesan</h3>
+            <form>
+              <div class="form-group">
+                <label>Nama Anda</label>
+                <input type="text" class="form-control" placeholder="Nama lengkap" required />
+              </div>
+              <div class="form-group">
+                <label>Email Anda</label>
+                <input type="email" class="form-control" placeholder="Alamat email" required />
+              </div>
+              <div class="form-group">
+                <label>Pesan</label>
+                <textarea class="form-control" rows="4" placeholder="Tulis pesan Anda di sini" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p style="font-size: 18px; font-weight: bold; margin: 0;">SD Harapan Bangsa</p>
+      <p style="margin: 5px 0;">Jl. Pendidikan No. 123, Tandam Hilir, Indonesia</p>
+      <div style="margin: 15px 0;">
+        <a href="https://instagram.com" target="_blank" class="fa fa-instagram" style="color:white; margin: 0 10px; font-size: 20px;"></a>
+        <a href="https://facebook.com" target="_blank" class="fa fa-facebook" style="color:white; margin: 0 10px; font-size: 20px;"></a>
+        <a href="https://youtube.com" target="_blank" class="fa fa-youtube-play" style="color:white; margin: 0 10px; font-size: 20px;"></a>
+      </div>
+      <p style="font-size: 14px; margin-top: 10px;">&copy; 2025 SD Harapan Bangsa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.navbar-nav .dropdown').hover(
+        function () {
+          $(this).addClass('open');
+        },
+        function () {
+          $(this).removeClass('open');
+        }
+      );
+    });
+  </script>
+</body>
+</html>

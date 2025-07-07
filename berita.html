@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Berita - SD Harapan Bangsa</title>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="bootstrap/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      background: #f5f5f5;
+      padding-top: 70px;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .main-content {
+      flex: 1;
+    }
+
+    .navbar-default {
+      background-color: #222;
+      border: none;
+    }
+
+    .navbar-default .navbar-brand,
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav > .dropdown > a {
+      color: #ccc;
+    }
+
+    .navbar-default .navbar-brand img {
+      height: 25px;
+      display: inline-block;
+      margin-top: -5px;
+      margin-right: 5px;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+      font-size: 16px;
+    }
+
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > .dropdown:hover > a {
+      color: #fff !important;
+      background-color: transparent !important;
+    }
+
+    .navbar-nav > li > .dropdown-menu {
+      background-color: #333;
+    }
+
+    .navbar-nav > li > .dropdown-menu > li > a {
+      color: #ccc;
+      background-color: transparent;
+      border: none;
+    }
+
+    .navbar-nav .dropdown-menu > li > a:hover,
+    .navbar-nav .dropdown-menu > li > a:focus {
+      color: #fff !important;
+      background-color: transparent !important;
+      text-decoration: none;
+    }
+
+    .navbar-nav > li > a:focus,
+    .navbar-nav > li > a:active,
+    .navbar-nav > .dropdown.open > a {
+      background-color: transparent !important;
+      color: #fff !important;
+      outline: none;
+      box-shadow: none;
+    }
+
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: right;
+        margin-right: 0;
+      }
+
+      .navbar-nav > .dropdown:hover > .dropdown-menu {
+        display: block;
+      }
+    }
+      .news-item {
+        height: 40rem;
+        margin-bottom: 30px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .news-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .news-content {
+        padding: 15px;
+      }
+      .news-content h4 {
+        margin-top: 0;
+      }
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 30px 0;
+      margin-bottom: 0;
+    }
+    </style>
+  </head>
+  <body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header text-center">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+          <span class="icon-bar" style="background-color: #fff;"></span>
+          <span class="icon-bar" style="background-color: #fff;"></span>
+          <span class="icon-bar" style="background-color: #fff;"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="img/SD HARAPAN BANGSA.png" alt="Logo">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Beranda</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profil <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="profil.html">Profil Sekolah</a></li>
+              <li><a href="struktur organisasi.html">Struktur Organisasi</a></li>
+              <li><a href="fasilitas.html">Fasilitas</a></li>
+              <li><a href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Akademik <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="galeri.html">Guru</a></li>
+              <li><a href="siswa.html">Siswa</a></li>
+              <li><a href="kurikulum.html">Kurikulum</a></li>
+            </ul>
+          </li>
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="pendaftaran.html">Pendaftaran</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Konten Berita -->
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 40px;">Berita Terbaru</h2>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="news-item">
+            <img src="img/puisi.jpeg">
+            <div class="news-content">
+              <h4>SD Harapan Bangsa Juara puisi Tingkat Kecamatan</h4>
+              <p>Salah satu siswa SD Harapan Bangsa berhasil meraih Juara I dalam lomba puisi tingkat kecamatan. Dengan suara lantang dan penuh penghayatan, puisinya menyentuh hati para juri dan penonton.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="news-item">
+            <img src="img/nanam.jpeg">
+            <div class="news-content">
+              <h4>Gerakan Menanam Bersama di Halaman Sekolah</h4>
+              <p>Seluruh siswa mengikuti kegiatan menanam pohon sebagai bagian dari program peduli lingkungan. Kegiatan ini didampingi langsung oleh guru dan orang tua.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="news-item">
+            <img src="img/museum.jpeg">
+            <div class="news-content">
+              <h4>Kunjungan Edukasi ke Museum Nasional</h4>
+              <p>Siswa kelas 4 dan 5 mengunjungi Museum Nasional untuk belajar sejarah dan budaya Indonesia. Mereka terlihat antusias dan aktif bertanya selama kegiatan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br><br><br><br><br>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p style="font-size: 18px; font-weight: bold; margin: 0;">SD Harapan Bangsa</p>
+      <p style="margin: 5px 0;">Jl. Pendidikan No. 123, Tandam Hilir, Indonesia</p>
+      <div style="margin: 15px 0;">
+        <a href="https://instagram.com" target="_blank" class="fa fa-instagram" style="color:white; margin: 0 10px; font-size: 20px;"></a>
+        <a href="https://facebook.com" target="_blank" class="fa fa-facebook" style="color:white; margin: 0 10px; font-size: 20px;"></a>
+        <a href="https://youtube.com" target="_blank" class="fa fa-youtube-play" style="color:white; margin: 0 10px; font-size: 20px;"></a>
+      </div>
+      <p style="font-size: 14px; margin-top: 10px;">&copy; 2025 SD Harapan Bangsa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.navbar-nav .dropdown').hover(
+        function () {
+          $(this).addClass('open');
+        },
+        function () {
+          $(this).removeClass('open');
+        }
+      );
+    });
+  </script>
+</body>
+</html>
